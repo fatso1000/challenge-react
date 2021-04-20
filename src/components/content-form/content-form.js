@@ -12,7 +12,7 @@ import {
 import React from "react";
 
 const { Option } = Select;
-const { Text, Title } = Typography;
+const { Text } = Typography;
 
 export default function content_form() {
   return (
