@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* FLEX */
+.flex {
   display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
   flex-direction: column;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-middle {
+  vertical-align: middle;
+}
+.content-center {
+  align-content: center;
+}
+.items-center {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.overflow-example {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* MARGIN */
+.m-4 {
+  margin: 1rem;
+}
+.ml-1 {
+  margin-left: 1px;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem /* 16px */;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.mx-2 {
+  margin-left: 0.5rem /* 8px */;
+  margin-right: 0.5rem /* 8px */;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+/* PADDING */
+.p-4 {
+  padding: 1rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+
+/* SHADOW */
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/* COLORS */
+.bg-navbar {
+  background-color: #e6f7ff;
+}
+.bg-blue {
+  background-color: #1890ff;
+}
+.bg-content {
+  background-color: #ffffff;
+}
+.bg-subnav {
+  background-color: #fafafa;
+}
+
+/* WIDTH */
+.w-full {
+  width: 100%;
+}
+.w-auto {
+  width: auto;
+}
+.w-4\/5 {
+  width: 80% !important;
+}
+.w-90 {
+  width: 93% !important;
+}
+.w-6 {
+  width: 1.5rem;
+}
+.w-1\/2 {
+  width: 50%;
+}
+
+/* HEIGHT */
+.h-navbar {
+  height: 64px;
+}
+.h-8 {
+  height: 32px;
+}
+.h-subnav {
+  height: 72px;
+}
+.h-content {
+  height: 756px;
+}
+.h-auto {
+  height: auto;
+}
+.h-full {
+  height: 100%;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.h-screen {
+  height: 100vh;
+}
+.h-78 {
+  /* height: 78% !important; */
+  height: 80!important;
+}
+
+/* FONT */
+
+/* TEXT */
+.text-color-white {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* DIVIDE */
+.border-0 {
+  border: 0;
+}
+.border-b-sm-blue {
+  border-bottom: 1px solid #91d5ff;
+  opacity: 1;
+}
+.border-b-sm-grey {
+  border-bottom: 1px solid #e8e8e8;
+  opacity: 1;
+}
+.border-sm-blue {
+  border: 1px solid #91d5ff;
+  opacity: 1;
+}
+.border-l-2 {
+  border: 2px;
+  border-left-width: 2px;
+}
+.border-white {
+  border-color: white;
+}
+.rounded-sm {
+  border-radius: 16px;
+}
+.rounded-l-sm {
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.rounded-r-sm {
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* BUTTON */
+.btn-group button {
+  cursor: pointer;
+  float: left;
+  padding: 6px 16px;
+}
+
+@media (max-width: 736px) {
+  .h-content {
+    height: 700px;
   }
-  to {
-    transform: rotate(360deg);
+  /* .h-78 { */
+    /* overflow-y: scroll; */
+    /* height: 100%; */
+  /* } */
+  .h-78 {
+    overflow-y: scroll;
+    height: 55% !important;
   }
+}
+
+
+/* CUSTOM ANT DESIGN */
+.ant-btn-group .ant-btn-primary:last-child:not(:first-child),
+.ant-btn-group .ant-btn-primary + .ant-btn-primary {
+  border-left-color: white;
+}
+
+a svg,
+div span svg {
+  width: 24px;
+  height: 24px;
+}
+button span svg {
+  width: auto;
+  height: auto;
+}
+.no-custom-size span svg {
+  width: auto;
+  height: auto;
 }
