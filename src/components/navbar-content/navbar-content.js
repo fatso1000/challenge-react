@@ -6,7 +6,7 @@ const { Text } = Typography;
 export default function navbar_content() {
   return (
     <div className="flex flex-row w-auto h-auto p-4 border-b-sm-grey bg-subnav">
-      <Space size="2" direction="horizontal" wrap>
+      <Space size={2} direction="horizontal" wrap>
         <Text type="secondary">
           Paciente:<Text> John Connor</Text>
         </Text>{" "}

@@ -30,7 +30,7 @@ const menu_2 = (
 export default function navbar() {
   return (
     <nav className="flex flex-row flex-wrap justify-between w-auto p-4 border-b-sm-blue bg-navbar">
-      <Space wrap size="small">
+      <Space wrap size={4}>
         <Dropdown.Button overlay={menu} type="primary">
           Facturar 10-2020
         </Dropdown.Button>

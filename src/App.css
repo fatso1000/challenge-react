@@ -198,10 +198,6 @@
   .h-content {
     height: 700px;
   }
-  /* .h-78 { */
-    /* overflow-y: scroll; */
-    /* height: 100%; */
-  /* } */
   .h-78 {
     overflow-y: scroll;
     height: 55% !important;

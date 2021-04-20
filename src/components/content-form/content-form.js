@@ -7,7 +7,7 @@ import {
   DatePicker,
   Col,
   Typography,
-  Radio
+  Radio,
 } from "antd";
 import React from "react";
 
@@ -23,21 +23,21 @@ export default function content_form() {
         </Col>
       </Row>
       <Row>
-        <Col span={6}>
+        <Col sm={24} lg={6}>
           <Form.Item label="Apellido" required>
             <Input value="Connor" className="w-90" />
           </Form.Item>
         </Col>
-        <Col span={6}>
+        <Col sm={24} lg={6}>
           <Form.Item label="Nombre" required>
             <Row>
-              <Col span={24}>
+              <Col>
                 <Input value="John" className="w-90" />
               </Col>
             </Row>
           </Form.Item>
         </Col>
-        <Col span={6}>
+        <Col sm={24} lg={6}>
           <Form.Item label="Documento de identidad">
             <Row>
               <Col span={12}>
@@ -59,7 +59,7 @@ export default function content_form() {
             </Row>
           </Form.Item>
         </Col>
-        <Col span={6}>
+        <Col sm={24} lg={6}>
           <Form.Item label="Sexo">
             <Row>
               <Col span={24}>
@@ -76,13 +76,13 @@ export default function content_form() {
       </Row>
       {/* SECOND FLOOR */}
       <Row>
-        <Col span={6}>
+        <Col sm={24} lg={6}>
           <Form.Item label="Fecha de nacimiento">
             <DatePicker className="w-90" />
           </Form.Item>
         </Col>
-        <Col span={4}>
-          <Form.Item label="Anios">
+        <Col sm={24} lg={4}>
+          <Form.Item label="Años">
             <Row>
               <Col span={24}>
                 <Input disabled className="w-90" />
@@ -90,7 +90,7 @@ export default function content_form() {
             </Row>
           </Form.Item>
         </Col>
-        <Col span={4}>
+        <Col sm={24} lg={4}>
           <Form.Item label="Meses">
             <Row>
               <Col span={24}>
@@ -99,7 +99,7 @@ export default function content_form() {
             </Row>
           </Form.Item>
         </Col>
-        <Col span={6}>
+        <Col sm={24} lg={6}>
           <Form.Item label="Tipo de paciente">
             <Row>
               <Col span={24}>
@@ -115,7 +115,7 @@ export default function content_form() {
         </Col>
       </Row>
       <Row>
-        <Col span={6}>
+        <Col sm={24} lg={6}>
           <Form.Item label="HISTORIA CLINICA">
             <Input className="w-90" />
           </Form.Item>
@@ -129,12 +129,12 @@ export default function content_form() {
         </Col>
       </Row>
       <Row>
-        <Col span={6}>
+        <Col sm={24} lg={6}>
           <Form.Item label="Telefono particular">
             <Input value="43215436" className="w-90" />
           </Form.Item>
         </Col>
-        <Col span={6}>
+        <Col sm={24} lg={6}>
           <Form.Item label="Telefono laboral">
             <Row>
               <Col span={24}>
@@ -143,7 +143,7 @@ export default function content_form() {
             </Row>
           </Form.Item>
         </Col>
-        <Col span={12}>
+        <Col sm={24} lg={12}>
           <Form.Item label="Telefono Movil">
             <Row>
               <Col span={6}>
@@ -157,10 +157,10 @@ export default function content_form() {
               <Col span={6} className="">
                 <Input value="765432145" className="w-90" />
               </Col>
-              <Col>
-                <Divider />
+              <Col xs={0} lg={2}>
+                <Divider type="vertical" />
               </Col>
-              <Col>
+              <Col span={6}>
                 <Radio>No tiene</Radio>
               </Col>
             </Row>

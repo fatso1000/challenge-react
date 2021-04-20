@@ -10,13 +10,12 @@ export default function content() {
     <div className="pb-2 overflow-example">
       <div className="container flex flex-col m-4 h-78 flex-nowrap border-sm-blue">
         <div className="flex flex-row justify-between w-full p-3 border-b-sm-blue">
-          <Space size="2" direction="horizontal" wrap>
+          <Space size={4} direction="horizontal" wrap>
             <Title level={3} className="m-0">
               Paciente
             </Title>
             <Divider type="vertical" />
             <Button type="primary">Guardar Cambios</Button>
-            <Divider type="vertical" />
             <Button type="default">Cancelar</Button>
             <Divider type="vertical" />
           </Space>
